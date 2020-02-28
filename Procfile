@@ -1,1 +1,1 @@
-web:    java -Xss512k -jar target/dependency/webapp-runner.jar --port 9090 target/*.war
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/bookmarks-1.0.0.war
